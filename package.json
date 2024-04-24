@@ -1,0 +1,31 @@
+{
+    "name": "nextjs-snippets",
+    "displayName": "nextjs-snippets",
+    "version": "0.0.0",
+    "description": "Next.js App Directory Snippets",
+    "keywords": [
+        "nextjs",
+        "react",
+        "snippets"
+    ],
+    "author": {
+        "name": "Agustín Arnoldi",
+        "email": "agusjkdev7@gmail.com",
+        "url": "https://github.com/agusjkdev"
+    },
+    "repository": {
+        "url": "git+https://github.com/agusjkdev/nextjs-snippets-extension.git"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": []
+    },
+    "devDependencies": {
+        "prettier": "3.2.5"
+    },
+    "engines": {
+        "vscode": "^1.88.0"
+    }
+}
