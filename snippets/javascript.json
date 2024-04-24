@@ -1,0 +1,141 @@
+{
+    "React Component": {
+        "prefix": "comp",
+        "body": [
+            "export default function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}(props) {",
+            "\treturn (",
+            "\t\t<span>$1</span>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Asynchronous React Component": {
+        "scope": "javascript,javascriptreact",
+        "prefix": "acomp",
+        "body": [
+            "export default async function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}(props) {",
+            "\treturn (",
+            "\t\t<span>$1</span>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "React Component With Children": {
+        "scope": "javascript,javascriptreact",
+        "prefix": "compc",
+        "body": [
+            "export default function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}({ children }) {",
+            "\treturn (",
+            "\t\t<span>{children}</span>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Asynchronous React Component With Children": {
+        "scope": "javascript,javascriptreact",
+        "prefix": "acompc",
+        "body": [
+            "export default async function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}({ children }) {",
+            "\treturn (",
+            "\t\t<span>{children}</span>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Nextjs Root Layout": {
+        "scope": "javascript,javascriptreact",
+        "prefix": "rlayout",
+        "body": [
+            "export const metadata = {",
+            "\ttitle: \"${2:Title}\",",
+            "\tdescription: \"${3:Description}\",",
+            "};",
+            "",
+            "export default function RootLayout({ children }) {",
+            "\treturn (",
+            "\t\t<html lang=\"${1:en}\">",
+            "\t\t\t<body>{children}</body>$0",
+            "\t\t</html>",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Asynchronous Nextjs Root Layout": {
+        "scope": "javascript,javascriptreact",
+        "prefix": "arlayout",
+        "body": [
+            "export const metadata = {",
+            "\ttitle: \"${2:Title}\",",
+            "\tdescription: \"${3:Description}\",",
+            "};",
+            "",
+            "export default async function RootLayout({ children }) {",
+            "\treturn (",
+            "\t\t<html lang=\"${1:en}\">",
+            "\t\t\t<body>{children}</body>$0",
+            "\t\t</html>",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Nextjs Layout": {
+        "scope": "javascript,javascriptreact",
+        "prefix": "layout",
+        "body": [
+            "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Layout}({ children }) {",
+            "\treturn (",
+            "\t\t<div>{children}</div>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Asynchronous Nextjs Layout": {
+        "scope": "javascript,javascriptreact",
+        "prefix": "alayout",
+        "body": [
+            "export default async function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Layout}({ children }) {",
+            "\treturn (",
+            "\t\t<div>{children}</div>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Nextjs Page": {
+        "scope": "javascript,javascriptreact",
+        "prefix": "page",
+        "body": [
+            "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}}(${2:{",
+            "\tparams,",
+            "\tsearchParams,",
+            "\\}}) {",
+            "\treturn (",
+            "\t\t<span>$1</span>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Asynchronous Nextjs Page": {
+        "scope": "javascript,javascriptreact",
+        "prefix": "apage",
+        "body": [
+            "export default async function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}}(${2:{",
+            "\tparams,",
+            "\tsearchParams,",
+            "\\}}) {",
+            "\treturn (",
+            "\t\t<span>$1</span>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    }
+}

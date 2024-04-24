@@ -20,7 +20,20 @@
         "Snippets"
     ],
     "contributes": {
-        "snippets": []
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/typescript.json"
+            }
+        ]
     },
     "devDependencies": {
         "prettier": "3.2.5"

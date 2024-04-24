@@ -1,0 +1,164 @@
+{
+    "Typescript React Component": {
+        "scope": "typescriptreact",
+        "prefix": "comp",
+        "body": [
+            "interface ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props {}",
+            "",
+            "export default function $1(props: Readonly<$1Props>) {",
+            "\treturn (",
+            "\t\t<span>$1</span>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Asynchronous Typescript React Component": {
+        "scope": "typescriptreact",
+        "prefix": "acomp",
+        "body": [
+            "interface ${1:Component}Props {}",
+            "",
+            "export default async function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}(props: Readonly<$1Props>) {",
+            "\treturn (",
+            "\t\t<span>$1</span>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Typescript React Component With Children": {
+        "scope": "typescriptreact",
+        "prefix": "compc",
+        "body": [
+            "interface ${1:Component}Props {",
+            "\tchildren: React.ReactNode",
+            "}",
+            "",
+            "export default function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}({ children }: Readonly<$1Props>) {",
+            "\treturn (",
+            "\t\t<span>{children}</span>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Asynchronous Typescript React Component With Children": {
+        "scope": "typescriptreact",
+        "prefix": "acompc",
+        "body": [
+            "interface ${1:Component}Props {",
+            "\tchildren: React.ReactNode",
+            "}",
+            "",
+            "export default async function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}({ children }: Readonly<$1Props>) {",
+            "\treturn (",
+            "\t\t<span>{children}</span>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Typescript Nextjs Root Layout": {
+        "scope": "typescriptreact",
+        "prefix": "rlayout",
+        "body": [
+            "import type { Metadata } from \"next\";",
+            "",
+            "export const metadata: Metadata = {",
+            "\ttitle: \"${2:Title}\",",
+            "\tdescription: \"${3:Description}\",",
+            "};",
+            "",
+            "export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {",
+            "\treturn (",
+            "\t\t<html lang=\"${1:en}\">",
+            "\t\t\t<body>{children}</body>$0",
+            "\t\t</html>",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Asynchronous Typescript Nextjs Root Layout": {
+        "scope": "typescriptreact",
+        "prefix": "arlayout",
+        "body": [
+            "import type { Metadata } from \"next\";",
+            "",
+            "export const metadata: Metadata = {",
+            "\ttitle: \"${2:Title}\",",
+            "\tdescription: \"${3:Description}\",",
+            "};",
+            "",
+            "export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {",
+            "\treturn (",
+            "\t\t<html lang=\"${1:en}\">",
+            "\t\t\t<body>{children}</body>$0",
+            "\t\t</html>",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Typescript Nextjs Layout": {
+        "scope": "typescriptreact",
+        "prefix": "layout",
+        "body": [
+            "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Layout}({ children }: Readonly<{children: React.ReactNode}>) {",
+            "\treturn (",
+            "\t\t<div>{children}</div>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Asynchronous Typescript Nextjs Layout": {
+        "scope": "typescriptreact",
+        "prefix": "alayout",
+        "body": [
+            "export default async function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Layout}({ children }: Readonly<{children: React.ReactNode}>) {",
+            "\treturn (",
+            "\t\t<div>{children}</div>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Typescript Nextjs Page": {
+        "scope": "typescriptreact",
+        "prefix": "page",
+        "body": [
+            "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}}(${2:{",
+            "\tparams,",
+            "\tsearchParams,",
+            "\\}: Readonly<{",
+            "\tparams: { slug: string \\};",
+            "\tsearchParams: Record<string, string | string[]>;",
+            "\\}>}) {",
+            "\treturn (",
+            "\t\t<span>$1</span>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    },
+    "Asynchronous Typescript Nextjs Page": {
+        "scope": "typescriptreact",
+        "prefix": "apage",
+        "body": [
+            "export default async function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}}(${2:{",
+            "\tparams,",
+            "\tsearchParams,",
+            "\\}: Readonly<{",
+            "\tparams: { slug: string \\};",
+            "\tsearchParams: Record<string, string | string[]>;",
+            "\\}>}) {",
+            "\treturn (",
+            "\t\t<span>$1</span>$0",
+            "\t);",
+            "}",
+            ""
+        ]
+    }
+}
