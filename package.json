@@ -1,7 +1,7 @@
 {
-    "name": "nextjs-snippets",
-    "displayName": "nextjs-snippets",
-    "version": "0.0.0",
+    "name": "nextjs-appdir-snippets",
+    "displayName": "Next.js App Directory Snippets",
+    "version": "0.0.1",
     "description": "Next.js App Directory Snippets",
     "keywords": [
         "nextjs",
@@ -14,8 +14,10 @@
         "url": "https://github.com/agusjkdev"
     },
     "repository": {
-        "url": "git+https://github.com/agusjkdev/nextjs-snippets-extension.git"
+        "url": "git+https://github.com/agusjkdev/nextjs-appdir-snippets-extension.git"
     },
+    "publisher": "agusjkdev",
+    "icon": "assets/logo.png",
     "categories": [
         "Snippets"
     ],
