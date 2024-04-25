@@ -105,7 +105,7 @@
         "scope": "typescriptreact",
         "prefix": "layout",
         "body": [
-            "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Layout}({ children }: Readonly<{children: React.ReactNode}>) {",
+            "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/pascalcase}/}Layout}({ children }: Readonly<{ children: React.ReactNode }>) {",
             "\treturn (",
             "\t\t<div>{children}</div>$0",
             "\t);",
@@ -117,7 +117,7 @@
         "scope": "typescriptreact",
         "prefix": "alayout",
         "body": [
-            "export default async function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Layout}({ children }: Readonly<{children: React.ReactNode}>) {",
+            "export default async function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/pascalcase}/}Layout}({ children }: Readonly<{ children: React.ReactNode }>) {",
             "\treturn (",
             "\t\t<div>{children}</div>$0",
             "\t);",
@@ -129,7 +129,7 @@
         "scope": "typescriptreact",
         "prefix": "page",
         "body": [
-            "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}}(${2:{",
+            "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/pascalcase}/}Page}(${2:{",
             "\tparams,",
             "\tsearchParams,",
             "\\}: Readonly<{",
@@ -147,7 +147,7 @@
         "scope": "typescriptreact",
         "prefix": "apage",
         "body": [
-            "export default async function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}}(${2:{",
+            "export default async function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/pascalcase}/}Page}(${2:{",
             "\tparams,",
             "\tsearchParams,",
             "\\}: Readonly<{",

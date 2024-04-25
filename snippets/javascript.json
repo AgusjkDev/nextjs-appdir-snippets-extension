@@ -88,7 +88,7 @@
         "scope": "javascript,javascriptreact",
         "prefix": "layout",
         "body": [
-            "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Layout}({ children }) {",
+            "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/pascalcase}/}Layout}({ children }) {",
             "\treturn (",
             "\t\t<div>{children}</div>$0",
             "\t);",
@@ -100,7 +100,7 @@
         "scope": "javascript,javascriptreact",
         "prefix": "alayout",
         "body": [
-            "export default async function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}Layout}({ children }) {",
+            "export default async function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/pascalcase}/}Layout}({ children }) {",
             "\treturn (",
             "\t\t<div>{children}</div>$0",
             "\t);",
@@ -112,7 +112,7 @@
         "scope": "javascript,javascriptreact",
         "prefix": "page",
         "body": [
-            "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}}(${2:{",
+            "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/pascalcase}/}Page}(${2:{",
             "\tparams,",
             "\tsearchParams,",
             "\\}}) {",
@@ -127,7 +127,7 @@
         "scope": "javascript,javascriptreact",
         "prefix": "apage",
         "body": [
-            "export default async function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}}(${2:{",
+            "export default async function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/pascalcase}/}Page}(${2:{",
             "\tparams,",
             "\tsearchParams,",
             "\\}}) {",
